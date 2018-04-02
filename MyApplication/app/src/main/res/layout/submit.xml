@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/antonym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Enter antonym"
+        app:layout_constraintTop_toBottomOf="@+id/enterSyn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/synonym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter synonym" />
+
+    <EditText
+        android:id="@+id/enterSyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/synonym"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/enterAnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/antonym"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:onClick="onSubmitClick"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@+id/enterAnt"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/submitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/submitted"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:id="@+id/submitted2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/submitted2"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>
